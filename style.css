@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*esto con el fin de que se puedan aplicar los estilos a la pagina*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    height: 100vh;
+}
+ 
+header{
+    /*alinear los elementos a la derecha*/
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    padding: 0 18px;
+}
+
+.options{
+    display: flex;
+    /*Cnetrar contenido*/
+    align-items: center;
+    gap: 12px ;
+}
+
+/*Enlacer*/ 
+header .options a{
+    text-decoration: none;
+    color: black;
+}
+
+header .options a img{
+    border-radius: 50px;
+    height: 24px;
+    width: 24px;
+}
+
+.search-logo{
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/icon_search.svg);
+    background-position: center;
+}
+
+.micro-logo{
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/googlemic_clr_24px.svg);
+    background-position: center;
+}
+
+.camera-logo{
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/lens_icon.svg);
+    background-size: cover;
+    background-position: center;
+}
+    
+main{
+    height: calc(100% - 30%);
+    display: flex;
+    justify-content: center;
+    /*centrado de contenido*/
+    align-items: center;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*propiedad para separar los elementos*/
+    gap: 32px;
+    /*background-color: aqua;*/ 
+}
+
+main .container figure {
+    height: 92px;
+}
+
+main .container figure img{
+    height: 100%;
+}
+
+main .container .searcher{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 40px;
+    width: 450px;
+    padding: 8px 12px;
+    border: 1px solid grey;
+    border-radius: 24px;
+}
+
+main .container .searcher button{
+    border: none;
+    background-color: transparent;
+}
+
+main .container .searcher button:hover {
+    color: rbga(255, 255, 255,.1);
+    background-color: grey;
+}
+
+main .container .searcher input{
+   width: 100%;
+   background-color: transparent;
+   border: none;
+}
+
+main .container .searcher-buttons{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+main .container .searcher-buttons a img{
+    padding: 12px;
+    margin: 1px 12px;
+    border-radius: 50%;
+    
+}
+
+main .container .searcher-buttons a {
+    text-decoration: none;
+    color: black;
+}
+
+main .container {
+    font-size: small;
+}
